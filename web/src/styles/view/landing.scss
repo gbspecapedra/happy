@@ -1,0 +1,68 @@
+#page-landing {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 68.75rem;
+    height: 100%;
+    max-height: 42.5rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url("../../assets/images/landing.svg") no-repeat 80% center;
+
+    main {
+      max-width: 21.875rem;
+      h1 {
+        font-size: 4.75rem;
+        font-weight: 900;
+        line-height: 4.375rem;
+      }
+      p {
+        margin-top: 2.5rem;
+        font-size: 1.5rem;
+        line-height: 2.125rem;
+      }
+    }
+
+    .location {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 1.5rem;
+      line-height: 2.125rem;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+
+      strong {
+        font-weight: 800;
+      }
+    }
+
+    .enter-app {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 5rem;
+      height: 5rem;
+      background: #ffd666;
+      border-radius: 1.875rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background: #96feff;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+#page-map {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+
+  aside {
+    width: 27.5rem;
+    background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 2.625rem;
+      margin-top: 4rem;
+    }
+
+    p {
+      line-height: 1.75rem;
+      margin-top: 1.5rem;
+    }
+
+    footer {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.5rem;
+
+      strong {
+        font-weight: 800;
+      }
+    }
+  }
+
+  .leaflet-container {
+    z-index: 5;
+  }
+
+  .create-orphanage {
+    position: absolute;
+    right: 2.5rem;
+    bottom: 2.5rem;
+    z-index: 10;
+    width: 4rem;
+    height: 4rem;
+    background: #15c3d6;
+    border-radius: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background: #17d6eb;
+    }
+  }
+}
