@@ -1,13 +1,13 @@
 <div id="readme" class="Box-body readme blob js-code-block-container">
   <article class="markdown-body entry-content p-3 p-md-6" itemprop="text">
-    <p align="center"><img alt="Happy" src=""></p>
+    <p align="center"><img alt="Happy" src="/gisabernardess/happy/blob/main/.github/happy.svg"></p>
     <p align="center">Find orphanages close to your home and bring more happiness to children</p>
     <p align="center">
-      <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/gisabernardess/books-list">
-      <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/gisabernardess/books-list">
-      <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/gisabernardess/books-list">
-      <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gisabernardess/books-list">
-      <img alt="Github license" src="https://img.shields.io/github/license/gisabernardess/books-list">
+      <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/gisabernardess/happy">
+      <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/gisabernardess/happy">
+      <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/gisabernardess/happy">
+      <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gisabernardess/happy">
+      <img alt="Github license" src="https://img.shields.io/github/license/gisabernardess/happy">
     </p>
     <h2>:speech_ballon: About </h2>
     <p>This project is being developed at the <a href="https://nextlevelweek.com/" rel="nofollow">Next Level Week #3</a>, which is a complete application (backend, frontend and mobile).</p>
