@@ -9,7 +9,7 @@
       <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gisabernardess/happy">
       <img alt="Github license" src="https://img.shields.io/github/license/gisabernardess/happy">
     </p>
-    <h2>:speech_ballon: About </h2>
+    <h2>:speech_balloon: About </h2>
     <p>This project is being developed at the <a href="https://nextlevelweek.com/" rel="nofollow">Next Level Week #3</a>, which is a complete application (backend, frontend and mobile).</p>
     <h2>:rocket: Technologies </h2>
     <p>This project was developed with the following technologies:</p>
