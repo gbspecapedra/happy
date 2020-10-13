@@ -15,7 +15,7 @@
     <p>This project was developed with the following technologies:</p>
     <ul>
       <li><a href="https://nodejs.org/" rel="nofollow">Node.js</a></li>
-      <li><a href="https://reactjs.org/" rel="nofollow">ReactJS</a></li>
+      <li><a href="https://reactjs.org/" rel="nofollow">React.js</a></li>
       <li><a href="https://reactnative.dev/" rel="nofollow">React Native</a></li>
     </ul>
     <h2>:information_source:</a> How To Use </h2>
@@ -25,7 +25,17 @@
 $ git clone https://github.com/gisabernardess/happy</pre>
     </div>
     <h4>⚙️ Backend </h4>
-    <p>-</p>
+    <div class="highlight highlight-source-shell">
+      <pre><span class="pl-c"><span class="pl-c">#</span> Go into the repository</span>
+$ <span class="pl-c1">cd</span> happy/server <br/>
+<span class="pl-c"><span class="pl-c">#</span> Install dependencies</span>
+$ yarn <br/>
+<span class="pl-c"><span class="pl-c">#</span> Run the development server</span>
+$ yarn start <br/>
+<span class="pl-c"><span class="pl-c">#</span> Run the migrations</span>
+$ yarn migration:run <br/>
+<span class="pl-c"><span class="pl-c">#</span> The app will automatically reload if you change any of the source files.</span></pre>
+</div>
     <h4>🖥️ Frontend </h4>
     <div class="highlight highlight-source-shell">
       <pre><span class="pl-c"><span class="pl-c">#</span> Go into the repository</span>
