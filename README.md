@@ -11,6 +11,7 @@
     </p>
     <h2>:speech_balloon: About </h2>
     <p>This project is being developed at the <a href="https://nextlevelweek.com/" rel="nofollow">Next Level Week #3</a>, which is a complete application (backend, frontend and mobile). The goal is to connect people to orphanages that make children's day more special.</p>
+    <p align="center"><img alt="Happy" src="https://github.com/gisabernardess/happy/blob/main/.github/landing.png"></p>
     <h2>:rocket: Technologies </h2>
     <p>This project was developed with the following technologies:</p>
     <ul>
