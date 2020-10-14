@@ -19,7 +19,7 @@
       <li><a href="https://reactnative.dev/" rel="nofollow">React Native</a></li>
     </ul>
     <h2>:bookmark: Layout </h2>
-    <p>You can view the layout of the project through this <a href="https://www.figma.com/files/project/12806129/Happy" rel="nofollow">link</a>. You need to have a <a href="https://www.figma.com/" rel="nofollow">Figma</a> account to access it.</p>
+    <p>You can view the layout of the project through these links: <a href="https://www.figma.com/file/L7N7aTJVSf8i6ZFIRNk2mT/Happy-Web" rel="nofollow">web version</a> and <a href="https://www.figma.com/file/m6e9dEvswxeLDFVklYBCKF/Happy-Mobile" rel="nofollow">mobile version</a>. You need to have a <a href="https://www.figma.com/" rel="nofollow">Figma</a> account to access it.</p>
     <h2>:information_source:</a> How To Use </h2>
     <p>To clone and run this application, you'll need <a href="https://git-scm.com" rel="nofollow">Git</a> and  <a href="https://legacy.yarnpkg.com" rel="nofollow">Yarn</a>. From your command line:</p>
     <div class="highlight highlight-source-shell">
