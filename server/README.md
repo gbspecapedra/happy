@@ -1,7 +1,6 @@
 <div id="readme" class="Box-body readme blob js-code-block-container">
   <article class="markdown-body entry-content p-3 p-md-6" itemprop="text">
     <p align="center"><img alt="Happy" src="https://github.com/gisabernardess/happy/blob/main/.github/happy.svg"></p>
-    <p align="center">API</p>
     <h2>:rocket: Technologies </h2>
     <p>Server-side was developed with the following technologies:</p>
     <ul>
@@ -44,7 +43,6 @@ $ yarn migration:run <br/>
       </li>
     </ul>
     <p>Also, you may need an SQL Editor like <a href="https://www.beekeeperstudio.io/" rel="nofollow">Beekeeper</a> or similar [optional].</p>
-    <br/>
     <hr>
     <p>Made with ♥ by Gisele Silva :wave: <a href="https://www.linkedin.com/in/gisabernardess/" rel="nofollow">Get in touch!</a></p>
   </article>
