@@ -10,7 +10,7 @@
       <img alt="Github license" src="https://img.shields.io/github/license/gisabernardess/happy">
     </p>
     <h2>:speech_balloon: About </h2>
-    <p>This project is being developed at the <a href="https://nextlevelweek.com/" rel="nofollow">Next Level Week #3</a>, which is a complete application (backend, frontend and mobile).</p>
+    <p>This project is being developed at the <a href="https://nextlevelweek.com/" rel="nofollow">Next Level Week #3</a>, which is a complete application (backend, frontend and mobile). The goal is to connect people to orphanages that make children's day more special.</p>
     <h2>:rocket: Technologies </h2>
     <p>This project was developed with the following technologies:</p>
     <ul>
@@ -18,6 +18,8 @@
       <li><a href="https://reactjs.org/" rel="nofollow">React.js</a></li>
       <li><a href="https://reactnative.dev/" rel="nofollow">React Native</a></li>
     </ul>
+    <h2>:bookmark: Layout </h2>
+    <p>You can view the layout of the project through this <a href="https://www.figma.com/files/project/12806129/Happy" rel="nofollow">link</a>. You need to have a <a href="https://www.figma.com/" rel="nofollow">Figma</a> account to access it.</p>
     <h2>:information_source:</a> How To Use </h2>
     <p>To clone and run this application, you'll need <a href="https://git-scm.com" rel="nofollow">Git</a> and  <a href="https://legacy.yarnpkg.com" rel="nofollow">Yarn</a>. From your command line:</p>
     <div class="highlight highlight-source-shell">
@@ -49,6 +51,8 @@ $ yarn start <br/>
 </div>
   <h4>📱 Mobile </h4>
     <p>-</p>
+  <h2>:handshake: Contributing </h2>
+  <p>See CONTRIBUTING guide for more information.</p>
     <h2>:pencil:</a> License </h2>
     <p>This project is under the MIT license. See the <a href="https://github.com/gisabernardess/happy/blob/main/LICENSE" rel="nofollow">LICENSE</a> for more information.</p>
     <hr>
