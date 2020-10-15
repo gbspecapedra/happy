@@ -20,7 +20,7 @@
       <li><a href="https://reactnative.dev/" rel="nofollow">React Native</a></li>
     </ul>
     <h2>:bookmark: Layout </h2>
-    <p>You can view the layout of the project in the <a href="https://www.figma.com/file/L7N7aTJVSf8i6ZFIRNk2mT/Happy-Web" rel="nofollow">web</a> and <a href="https://www.figma.com/file/m6e9dEvswxeLDFVklYBCKF/Happy-Mobile" rel="nofollow">mobile</a> version. You need to have a <a href="https://www.figma.com/" rel="nofollow">Figma</a> account to access it.</p>
+    <p>You can view the layout of the project in the <a href="https://www.figma.com/file/gDrXld4UIliHT2EzLRlHOt/Happy-Web" rel="nofollow">web</a> and <a href="https://www.figma.com/file/YyJdg3EebwMgelgNJyPSL3/Happy-Mobile" rel="nofollow">mobile</a> version. You need to have a <a href="https://www.figma.com/" rel="nofollow">Figma</a> account to access it.</p>
     <h2>:information_source:</a> How To Use </h2>
     <p>To clone and run this application, you'll need <a href="https://git-scm.com" rel="nofollow">Git</a> and  <a href="https://legacy.yarnpkg.com" rel="nofollow">Yarn</a>. From your command line:</p>
     <div class="highlight highlight-source-shell">
@@ -51,9 +51,16 @@ $ yarn start <br/>
 <span class="pl-c"><span class="pl-c">#</span> The app will automatically reload if you change any of the source files.</span></pre>
 </div>
   <h4>📱 Mobile </h4>
-    <p>-</p>
-  <h2>:handshake: Contributing </h2>
-  <p>See CONTRIBUTING guide for more information.</p>
+    <div class="highlight highlight-source-shell">
+      <pre><span class="pl-c"><span class="pl-c">#</span> Be into the repository</span>
+$ <span class="pl-c1">cd</span> happy/mobile <br/>
+<span class="pl-c"><span class="pl-c">#</span> Install dependencies</span>
+$ yarn <br/>
+<span class="pl-c"><span class="pl-c">#</span> Run the development server</span>
+$ yarn start <br/>
+<span class="pl-c"><span class="pl-c">#</span> The app will automatically starts Metro Bundler. You may use an emulator or your own smartphone.</span>
+<span class="pl-c"><span class="pl-c">#</span> Automatically reloads if you change any of the source files.</span></pre>
+</div>
     <h2>:pencil:</a> License </h2>
     <p>This project is under the MIT license. See the <a href="https://github.com/gisabernardess/happy/blob/main/LICENSE" rel="nofollow">LICENSE</a> for more information.</p>
     <hr>
