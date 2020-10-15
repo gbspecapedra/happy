@@ -53,7 +53,7 @@ $ yarn start <br/>
   <h4>📱 Mobile </h4>
     <p>-</p>
   <h2>:handshake: Contributing </h2>
-  <p>See CONTRIBUTING guide for more information.</p>
+  <p>See <a href="https://github.com/gisabernardess/happy/blob/main/CONTRIBUTING.md" rel="nofollow">CONTRIBUTING</a> guide for more information.</p>
     <h2>:pencil:</a> License </h2>
     <p>This project is under the MIT license. See the <a href="https://github.com/gisabernardess/happy/blob/main/LICENSE" rel="nofollow">LICENSE</a> for more information.</p>
     <hr>
