@@ -18,8 +18,6 @@
       <li><a href="https://nodejs.org/" rel="nofollow">Node.js</a></li>
       <li><a href="https://reactjs.org/" rel="nofollow">React.js</a></li>
       <li><a href="https://reactnative.dev/" rel="nofollow">React Native</a></li>
-      <li><a href="https://expo.io/" rel="nofollow">Expo</a></li>
-      <li><a href="https://www.typescriptlang.org/" rel="nofollow">Typescript</a></li>
     </ul>
     <h2>:bookmark: Layout</h2>
     <p>You can view the layout of the project in the <a href="https://www.figma.com/file/gDrXld4UIliHT2EzLRlHOt/Happy-Web" rel="nofollow">web</a> and <a href="https://www.figma.com/file/YyJdg3EebwMgelgNJyPSL3/Happy-Mobile" rel="nofollow">mobile</a> version. You need to have a <a href="https://www.figma.com/" rel="nofollow">Figma</a> account to access it.</p>
