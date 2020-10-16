@@ -7,6 +7,7 @@
     <li><a href="https://reactnative.dev/" rel="nofollow">react native</a></li>
       <li><a href="https://reactnavigation.org/" rel="nofollow">react-navigation</a></li>
       <li><a href="https://expo.io/" rel="nofollow">expo</a></li>
+      <li><a href="https://github.com/axios/axios" rel="nofollow">axios</a></li>
       <li><a href="https://www.typescriptlang.org/" rel="nofollow">typescript</a></li>
       <li><a href="https://code.visualstudio.com/" rel="nofollow">VS Code</a></li>
     </ul>
