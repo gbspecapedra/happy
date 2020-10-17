@@ -4,7 +4,7 @@ import {
   Landing,
   OrphanagesMap,
   CreateOrphanage,
-  OrphanageDetail,
+  OrphanageDetails,
 } from "./views";
 
 export const Routes = () => {
@@ -14,7 +14,7 @@ export const Routes = () => {
         <Route path="/" exact component={Landing} />
         <Route path="/app" component={OrphanagesMap} />
         <Route path="/orphanages/create" component={CreateOrphanage} />
-        <Route path="/orphanages/:id" component={OrphanageDetail} />
+        <Route path="/orphanages/:id" component={OrphanageDetails} />
       </Switch>
     </BrowserRouter>
   );

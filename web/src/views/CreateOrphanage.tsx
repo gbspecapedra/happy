@@ -1,14 +1,15 @@
 import React, { ChangeEvent, FormEvent, useState } from "react";
+import { useHistory } from "react-router-dom";
 import { Map, Marker, TileLayer } from "react-leaflet";
 import { LeafletMouseEvent } from "leaflet";
 import { FiPlus } from "react-icons/fi";
+import InputMask from "react-input-mask";
 
 import { Sidebar } from "../components";
 import { mapIcon } from "../utils";
+import api from "../services/api";
 
 import "../styles/views/create-orphanage.scss";
-import api from "../services/api";
-import { useHistory } from "react-router-dom";
 
 export const CreateOrphanage = () => {
   const history = useHistory();
@@ -16,6 +17,7 @@ export const CreateOrphanage = () => {
   const [position, setPosition] = useState({ latitude: 0, longitude: 0 });
   const [name, setName] = useState("");
   const [about, setAbout] = useState("");
+  const [whatsapp, setWhatsapp] = useState("");
   const [instructions, setInstructions] = useState("");
   const [opening_hours, setOpeningHours] = useState("");
   const [open_on_weekends, setOpenOnWeekends] = useState(true);
@@ -43,11 +45,11 @@ export const CreateOrphanage = () => {
     const { latitude, longitude } = position;
 
     const data = new FormData();
-
     data.append("name", name);
     data.append("latitude", String(latitude));
     data.append("longitude", String(longitude));
     data.append("about", about);
+    data.append("whatsapp", whatsapp.replace(/[^0-9]+/g, ""));
     data.append("instructions", instructions);
     data.append("opening_hours", opening_hours);
     data.append("open_on_weekends", String(open_on_weekends));
@@ -58,7 +60,7 @@ export const CreateOrphanage = () => {
 
     await api.post("orphanages", data);
 
-    alert("Cadastro relaizado com sucesso!");
+    alert("Cadastro realizado com sucesso!");
     history.push("/app");
   };
 
@@ -71,7 +73,7 @@ export const CreateOrphanage = () => {
             <legend>Dados</legend>
 
             <Map
-              center={[-27.2092052, -49.6401092]}
+              center={[-27.4333303, -48.4088104]}
               style={{ width: "100%", height: 280 }}
               zoom={15}
               onclick={handleMapClick}
@@ -107,6 +109,17 @@ export const CreateOrphanage = () => {
                 maxLength={300}
                 value={about}
                 onChange={(event) => setAbout(event.target.value)}
+              />
+            </div>
+
+            <div className="input-block">
+              <label htmlFor="whatsapp">Whatsapp</label>
+              <InputMask
+                id="whatsapp"
+                value={whatsapp}
+                onChange={(event) => setWhatsapp(event.target.value)}
+                mask="(99) 99999-9999"
+                maskPlaceholder={null}
               />
             </div>
 

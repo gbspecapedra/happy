@@ -47,6 +47,12 @@ export const OrphanageDetails = () => {
     );
   };
 
+  const handleWhatsappContact = () => {
+    Linking.openURL(
+      `https://api.whatsapp.com/send?phone=55${orphanage?.whatsapp}&text=Olá, ${orphanage?.name}!`
+    );
+  };
+
   return (
     <ScrollView style={styles.container}>
       <View style={styles.imagesContainer}>
@@ -130,7 +136,10 @@ export const OrphanageDetails = () => {
           )}
         </View>
 
-        <RectButton style={styles.contactButton} onPress={() => {}}>
+        <RectButton
+          style={styles.contactButton}
+          onPress={handleWhatsappContact}
+        >
           <FontAwesome name="whatsapp" size={24} color="#FFF" />
           <Text style={styles.contactButtonText}>Entrar em contato</Text>
         </RectButton>

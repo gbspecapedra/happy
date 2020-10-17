@@ -8,15 +8,15 @@ import { Sidebar } from "../components";
 import { mapIcon } from "../utils";
 import api from "../services/api";
 
-import { Orphanage } from "../types/Orphanage";
+import { Orphanage } from "../models";
 
-import "../styles/views/orphanage-detail.scss";
+import "../styles/views/orphanage-details.scss";
 
 interface RouteParams {
   id: string;
 }
 
-export const OrphanageDetail = () => {
+export const OrphanageDetails = () => {
   const { id } = useParams<RouteParams>();
   const [orphanage, setOrphanage] = useState<Orphanage>();
   const [activeImageIndex, setActiveImageIndex] = useState(0);
@@ -117,10 +117,13 @@ export const OrphanageDetail = () => {
               )}
             </div>
 
-            <button type="button" className="contact-button">
+            <a
+              className="contact-button"
+              href={`https://api.whatsapp.com/send?phone=55${orphanage?.whatsapp}&text=Olá, ${orphanage?.name}!`}
+            >
               <FaWhatsapp size={20} color="#FFF" />
               Entrar em contato
-            </button>
+            </a>
           </div>
         </div>
       </main>

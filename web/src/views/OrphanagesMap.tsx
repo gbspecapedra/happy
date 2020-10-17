@@ -7,7 +7,7 @@ import mapMarkerImg from "../assets/images/map-marker.svg";
 import { mapIcon } from "../utils";
 import api from "../services/api";
 
-import { Orphanage } from "../types/Orphanage";
+import { Orphanage } from "../models";
 
 import "../styles/views/orphanages-map.scss";
 

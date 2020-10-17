@@ -13,6 +13,7 @@ import { useNavigation, useRoute } from "@react-navigation/native";
 import { RectButton } from "react-native-gesture-handler";
 import { Feather } from "@expo/vector-icons";
 import * as ImagePicker from "expo-image-picker";
+import { TextInputMask } from "react-native-masked-text";
 
 import { api } from "../../services/api";
 
@@ -30,7 +31,7 @@ export const OrphanageData = () => {
 
   const [name, setName] = useState("");
   const [about, setAbout] = useState("");
-  const [whatsapp, setWhatsapp] = useState("");
+  const [whatsapp, setWhatsapp] = useState<any>("");
   const [images, setImages] = useState<string[]>([]);
   const [instructions, setInstructions] = useState("");
   const [opening_hours, setOpeningHours] = useState("");
@@ -64,6 +65,7 @@ export const OrphanageData = () => {
     data.append("latitude", String(latitude));
     data.append("longitude", String(longitude));
     data.append("about", about);
+    data.append("whatsapp", whatsapp);
     data.append("instructions", instructions);
     data.append("opening_hours", opening_hours);
     data.append("open_on_weekends", String(open_on_weekends));
@@ -101,10 +103,13 @@ export const OrphanageData = () => {
       />
 
       <Text style={styles.label}>Whatsapp</Text>
-      <TextInput
+      <TextInputMask
         style={styles.input}
+        type={"cel-phone"}
+        options={{ maskType: "BRL", mask: "(99) 99999-9999" }}
         value={whatsapp}
-        onChangeText={setWhatsapp}
+        onChangeText={(_, unmasked) => setWhatsapp(unmasked)}
+        includeRawValueInChangeText
       />
 
       <Text style={styles.label}>Fotos</Text>
