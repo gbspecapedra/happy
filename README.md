@@ -66,6 +66,7 @@ $ yarn start <br/>
     <ul>
     <li>Whatsapp field & mask</li>
     <li>Actual user location</li>
+    <li>Splash Screen at React Native with Expo</li>
     </ul>
     <h2>:pencil: License</h2>
     <p>This project is under the MIT license. See the <a href="https://github.com/gisabernardess/happy/blob/main/LICENSE" rel="nofollow">LICENSE</a> for more information.</p>
