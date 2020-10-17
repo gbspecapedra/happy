@@ -65,6 +65,7 @@ $ yarn start <br/>
     <p><a href="https://www.notion.so/Vers-o-2-0-do-Happy-c754db7a4d41469e8c2d00fcf75392c4" rel="nofollow">Challenges</a> for the development of new features, in order to go the extra mile and further increase this application.</p>
     <ul>
     <li>Whatsapp field & mask</li>
+    <li>Actual user location</li>
     </ul>
     <h2>:pencil: License</h2>
     <p>This project is under the MIT license. See the <a href="https://github.com/gisabernardess/happy/blob/main/LICENSE" rel="nofollow">LICENSE</a> for more information.</p>

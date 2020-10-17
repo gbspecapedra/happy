@@ -13,6 +13,19 @@ import "../styles/views/orphanages-map.scss";
 
 export const OrphanagesMap = () => {
   const [orphanages, setOrphanages] = useState<Orphanage[]>([]);
+  const [userLocation, setUserLocation] = useState({
+    latitude: -27.5707056,
+    longitude: -48.7504619,
+  });
+
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((location) => {
+        const { latitude, longitude } = location.coords;
+        setUserLocation({ latitude, longitude });
+      });
+    }
+  }, []);
 
   useEffect(() => {
     api.get("orphanages").then((response) => {
@@ -36,13 +49,13 @@ export const OrphanagesMap = () => {
       </aside>
 
       <Map
-        center={[-27.4333303, -48.4088104]}
+        center={[userLocation.latitude, userLocation.longitude]}
         zoom={15}
         style={{ width: "100%", height: "100%" }}
       >
         {/* <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" /> */}
         <TileLayer
-          url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
+          url={`https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
         />
 
         {orphanages?.map((orphanage: Orphanage) => {

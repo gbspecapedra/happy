@@ -8,6 +8,7 @@ import {
   TextInput,
   TouchableOpacity,
   Image,
+  Alert,
 } from "react-native";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import { RectButton } from "react-native-gesture-handler";
@@ -41,7 +42,7 @@ export const OrphanageData = () => {
     const { status } = await ImagePicker.requestCameraRollPermissionsAsync();
 
     if (status !== "granted") {
-      alert("Eita, precisamos de acesso às fotos.");
+      Alert.alert("Eita, precisamos de acesso às fotos.");
       return;
     }
 

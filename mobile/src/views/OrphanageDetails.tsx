@@ -77,6 +77,7 @@ export const OrphanageDetails = () => {
 
         <View style={styles.mapContainer}>
           <MapView
+            style={styles.map}
             initialRegion={{
               latitude: orphanage.latitude,
               longitude: orphanage.longitude,
@@ -87,7 +88,6 @@ export const OrphanageDetails = () => {
             pitchEnabled={false}
             scrollEnabled={false}
             rotateEnabled={false}
-            style={styles.mapStyle}
           >
             <Marker
               icon={mapMarkerImg}
@@ -189,7 +189,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#E6F7FB",
   },
 
-  mapStyle: {
+  map: {
     width: "100%",
     height: 150,
   },

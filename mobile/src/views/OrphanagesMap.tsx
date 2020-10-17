@@ -4,6 +4,7 @@ import { useNavigation, useFocusEffect } from "@react-navigation/native";
 import { RectButton } from "react-native-gesture-handler";
 import MapView, { Marker, Callout, PROVIDER_GOOGLE } from "react-native-maps";
 import { Feather } from "@expo/vector-icons";
+import * as Location from "expo-location";
 
 import { api } from "../services/api";
 import { Orphanage } from "../models/";
@@ -11,8 +12,24 @@ import { Orphanage } from "../models/";
 import mapMarker from "../images/map-marker.png";
 
 export const OrphanagesMap = () => {
-  const [orphanages, setOrphanages] = useState<Orphanage[]>([]);
   const navigation = useNavigation();
+  const [userLocation, setUserLocation] = useState({
+    latitude: -27.5707056,
+    longitude: -48.7504619,
+  });
+
+  const [orphanages, setOrphanages] = useState<Orphanage[]>([]);
+
+  useEffect(() => {
+    (async () => {
+      const { status } = await Location.requestPermissionsAsync();
+      if (status === "granted") {
+        const location = await Location.getCurrentPositionAsync({});
+        const { latitude, longitude } = location.coords;
+        setUserLocation({ latitude, longitude });
+      }
+    })();
+  }, []);
 
   useFocusEffect(
     useCallback(() => {
@@ -31,11 +48,11 @@ export const OrphanagesMap = () => {
   return (
     <View style={styles.container}>
       <MapView
-        provider={PROVIDER_GOOGLE}
         style={styles.map}
+        provider={PROVIDER_GOOGLE}
         initialRegion={{
-          latitude: -27.4349743,
-          longitude: -48.4043797,
+          latitude: userLocation.latitude,
+          longitude: userLocation.longitude,
           latitudeDelta: 0.008,
           longitudeDelta: 0.008,
         }}
