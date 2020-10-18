@@ -15,3 +15,62 @@ button,
 textarea {
   font: 600 1.125rem Nunito, sans-serif;
 }
+
+.primary-button {
+  margin-top: 1.5rem;
+
+  width: 100%;
+  height: 4rem;
+  border: 0;
+  cursor: pointer;
+  background: #3cdc8c;
+  border-radius: 1.25rem;
+  color: #fff;
+  font-weight: 800;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.2s;
+
+  text-decoration: none;
+
+  svg {
+    margin-right: 1rem;
+  }
+
+  &:hover {
+    background: #36cf82;
+  }
+}
+
+.secondary-button {
+  margin-top: 1.5rem;
+
+  width: 100%;
+  height: 4rem;
+  border: 0;
+  cursor: pointer;
+  background: #12d4e0;
+  border-radius: 1.25rem;
+  color: #fff;
+  font-weight: 800;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.2s;
+
+  text-decoration: none;
+
+  svg {
+    margin-right: 1rem;
+  }
+
+  &:hover {
+    background: #96feff;
+    color: #15c3d6;
+  }
+}

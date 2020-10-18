@@ -18,13 +18,34 @@
     justify-content: space-between;
     background: url("../../assets/images/landing.svg") no-repeat 80% center;
 
+    .logo {
+      width: 100%;
+      max-width: 30rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .location {
+        font-size: 1.5rem;
+        line-height: 2.125rem;
+        display: flex;
+        flex-direction: column;
+
+        strong {
+          font-weight: 800;
+        }
+      }
+    }
+
     main {
       max-width: 21.875rem;
+
       h1 {
         font-size: 4.75rem;
         font-weight: 900;
         line-height: 4.375rem;
       }
+
       p {
         margin-top: 2.5rem;
         font-size: 1.5rem;
@@ -32,19 +53,15 @@
       }
     }
 
-    .location {
+    .restrict-access {
       position: absolute;
       right: 0;
       top: 0;
-      font-size: 1.5rem;
-      line-height: 2.125rem;
-      display: flex;
-      flex-direction: column;
-      text-align: right;
-
-      strong {
-        font-weight: 800;
-      }
+      margin: 0;
+      width: 13.875rem;
+      height: 3.5rem;
+      font-size: 1.25rem;
+      line-height: 1.875rem;
     }
 
     .enter-app {
