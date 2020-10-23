@@ -1,19 +1,31 @@
-import { Router } from 'express';
-import multer from 'multer';
+import { Router } from "express";
+import multer from "multer";
 
-import uploadConfig from './config/upload';
-import OrphanagesController from './controllers/OrphanagesController';
-import UsersController from './controllers/UsersController';
+import uploadConfig from "./config/upload";
+import OrphanagesController from "./controllers/OrphanagesController";
+import SessionsController from "./controllers/SessionsController";
+import UsersController from "./controllers/UsersController";
+import { Authentication } from "./middlewares/Authentication";
 
 const routes = Router();
 const upload = multer(uploadConfig);
 
-routes.get('/users/:email', UsersController.show);
-routes.post('/users', UsersController.create);
-routes.put('/users/:email', UsersController.update);
+/**
+ * Public routes
+ */
+routes.post("/users", UsersController.create);
+routes.get("/orphanages", OrphanagesController.index);
+routes.get("/orphanages/:id", OrphanagesController.show);
 
-routes.get('/orphanages', OrphanagesController.index);
-routes.get('/orphanages/:id', OrphanagesController.show);
-routes.post('/orphanages', upload.array('images'), OrphanagesController.create);
+/**
+ * Private routes
+ */
+routes.post("/sessions", SessionsController.index);
+routes.use(Authentication);
+
+routes.get("/users/:id", UsersController.show);
+routes.put("/users/:email", UsersController.update);
+
+routes.post("/orphanages", upload.array("images"), OrphanagesController.create);
 
 export default routes;

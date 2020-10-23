@@ -1,12 +1,19 @@
 import React, { FormEvent, useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useHistory, useParams } from "react-router-dom";
 
 import { SignContainer } from "../../components";
+import api from "../../services/api";
 
 import "../../styles/views/login.scss";
 
+interface RouteParams {
+  email: string;
+}
+
 export const NewPassword = () => {
+  const { email } = useParams<RouteParams>();
   const history = useHistory();
+
   const [oldPassword, setOldPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -14,12 +21,13 @@ export const NewPassword = () => {
   const handleSubmit = async (event: FormEvent) => {
     event.preventDefault();
 
-    console.log({
+    await api.put(`/users/${email}`, {
       oldPassword,
       newPassword,
       confirmPassword,
     });
 
+    alert("Senha alterada com sucesso!");
     history.push("/signin");
   };
 
